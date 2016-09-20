@@ -1,0 +1,246 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i';
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(98, 98, 98);
+}
+.navbar-brand {
+  padding: 15px 5px;
+}
+.navbar {
+  margin-bottom: 0;
+  color: #FFF;
+  position: relative;
+  background: #FFF;
+  border-bottom: 2px solid rgba(255,255,255, .3);
+  .navbar-brand {
+    height: auto;
+    img {
+      width: 200px;
+    }
+  }
+  .nav {
+    li {
+      a {
+        color: #4b4f52;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 18px 10px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.contact-us {
+  header {
+    padding: 0;
+    background: none;
+    iframe {
+      height: 350px;
+    }
+  }
+}
+header {  
+  margin: 0;  
+  background:url("../images/bannerimage.jpg") center center;  
+  background-size: 100%;
+  position: relative;
+  color: #FFF;
+  padding: 45px 0;  
+  // box-shadow: 0 2px 5px rgba(0,0,0,.2), 0 2px 16px rgba(0,0,0,.2);  
+  h1 {   
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    font-weight: 200;
+    float: left;
+  }
+  h3 {   
+    font-size: 21px;
+    font-weight: 200;
+  } }
+
+  .address-map {
+    width: 100%;
+    height: 250px;
+  }
+
+  .contact-map {
+    padding: 0;
+  }
+  .card {
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  }
+  .contact-form {
+    .card {
+      border-top: 5px solid #256aaf;
+      padding: 30px 25px;
+      background: #fafafa;
+    margin-top: -150px;
+    }
+  }
+  .address-container {
+    font-size: 16px;
+    h1 {
+      padding-bottom: 15px;
+      border-bottom: 2px solid #256aaf;
+    }
+    & > div {
+      float: left;
+      width: 33%;
+    }
+    .contact-info {
+      margin-bottom: 25px;
+    }
+    .contact-details {
+      clear: left;
+    }
+    .contact-image {
+      float: right;
+    }
+  }
+
+  .home {
+    .navbar {
+      background: #003559;
+      .nav {
+        li {
+          a {
+            color: #FFF;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 18px 10px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://images.clipartbro.com/54/london-skyline-clip-art-vector-online-royalty-free-54778.svg") #006bb1 center 250px repeat-x;  
+      padding: 250px 0 150px;
+      &:after {
+        background: linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.5) 100%);
+        bottom: 8px;
+        content: '';
+        display: block;
+        height: 0;
+        left: 0;
+        padding-bottom: 13%;
+        position: absolute;
+        right: 0;
+        z-index: 20;
+      }
+      h1 {
+        border-bottom: 1px solid #FFF;
+        width: 150px;
+        padding: 0 0 20px;
+        margin-bottom: 10px;
+        background: none;
+        text-align: left;
+        float: none;
+        font-size: 30px;
+      }
+    }
+  }
+  section {
+    padding: 75px 0;
+    background: #fafafa;
+    &.intro {
+      h2 {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      .stockphoto {
+        float: right;
+        width: 100%;
+      }
+      .learn-more {
+        margin-top: 25px;
+        text-transform: uppercase;
+        display: block;
+        padding: 10px 20px;
+        background: #4285f4;
+        font-size: 12px;
+        font-weight: 500;
+        color: #FFF;
+        float: left;
+        transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0.2s;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        &:hover {
+          text-decoration: none;
+          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+          transition-delay: 0s;
+        }
+      }
+    }
+    &.work {
+      background: #fbfaf8;
+      h2 {
+        font-size: 1.7em;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding-left: 1%;
+        text-align: left;
+      }
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        margin: 0 1%;
+        padding: 20px;
+        width: 18%;
+        list-style-type: none;
+        background: #FFF;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img  {
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    color: #FFF;
+    background: #2C3E50;
+    padding: 25px;
+    p {
+      margin: 15px 0 0;
+      font-size: 12px;
+      text-align: center;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 10px;
+        font-size: 24px;
+        display: inline-block;
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
