@@ -1,0 +1,42 @@
+.home {
+  .navbar {
+    background: #003559;
+    .nav {
+      li {
+        a {
+          color: #FFF;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin: 18px 10px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/skyline.png") #006bb1 center bottom repeat-x;  
+    padding: 240px 0 140px;
+    &:after {
+      background: linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.5) 100%);
+      bottom: 8px;
+      content: '';
+      display: block;
+      height: 0;
+      left: 0;
+      padding-bottom: 13%;
+      position: absolute;
+      right: 0;
+      z-index: 20;
+    }
+    h1 {
+      border-bottom: 1px solid #FFF;
+      width: 150px;
+      padding: 0 0 20px;
+      margin-bottom: 10px;
+      background: none;
+      text-align: left;
+      float: none;
+      font-size: 30px;
+    }
+  }
+}

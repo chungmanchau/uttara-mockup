@@ -204,10 +204,13 @@ body {
   padding: 15px 5px; }
 
 .navbar {
+  border-radius: 0;
   margin-bottom: 0;
   color: #FFF;
   position: relative;
   background: #FFF;
+  border: none;
+  border-color: rgba(255, 255, 255, 0.3);
   border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
   .navbar .navbar-brand {
     height: auto; }
@@ -220,19 +223,14 @@ body {
     margin: 18px 10px;
     font-size: 13px; }
 
-.contact-us header {
-  padding: 0;
-  background: none; }
-  .contact-us header iframe {
-    height: 350px; }
-
 header {
   margin: 0;
   background: url("../images/bannerimage.jpg") center center;
   background-size: 100%;
   position: relative;
   color: #FFF;
-  padding: 45px 0; }
+  padding: 45px 0;
+  border-bottom: 5px solid #256aaf; }
   header h1 {
     font-size: 30px;
     padding: 10px;
@@ -244,74 +242,14 @@ header {
     font-size: 21px;
     font-weight: 200; }
 
-.address-map {
-  width: 100%;
-  height: 250px; }
-
-.contact-map {
-  padding: 0; }
-
 .card {
   background: #FFF;
   padding: 20px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
 
-.contact-form .card {
-  border-top: 5px solid #256aaf;
-  padding: 30px 25px;
-  background: #fafafa;
-  margin-top: -150px; }
-
-.address-container {
-  font-size: 16px; }
-  .address-container h1 {
-    padding-bottom: 15px;
-    border-bottom: 2px solid #256aaf; }
-  .address-container > div {
-    float: left;
-    width: 33%; }
-  .address-container .contact-info {
-    margin-bottom: 25px; }
-  .address-container .contact-details {
-    clear: left; }
-  .address-container .contact-image {
-    float: right; }
-
-.home .navbar {
-  background: #003559; }
-  .home .navbar .nav li a {
-    color: #FFF;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 18px 10px;
-    font-size: 13px; }
-.home header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://images.clipartbro.com/54/london-skyline-clip-art-vector-online-royalty-free-54778.svg") #006bb1 center 250px repeat-x;
-  padding: 250px 0 150px; }
-  .home header:after {
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
-    bottom: 8px;
-    content: '';
-    display: block;
-    height: 0;
-    left: 0;
-    padding-bottom: 13%;
-    position: absolute;
-    right: 0;
-    z-index: 20; }
-  .home header h1 {
-    border-bottom: 1px solid #FFF;
-    width: 150px;
-    padding: 0 0 20px;
-    margin-bottom: 10px;
-    background: none;
-    text-align: left;
-    float: none;
-    font-size: 30px; }
-
 section {
-  padding: 75px 0;
-  background: #fafafa; }
+  padding: 60px 0;
+  background: #FFF; }
   section.intro h2 {
     font-size: 21px;
     font-weight: 500;
@@ -324,7 +262,7 @@ section {
     text-transform: uppercase;
     display: block;
     padding: 10px 20px;
-    background: #4285f4;
+    background: #006bb1;
     font-size: 12px;
     font-weight: 500;
     color: #FFF;
@@ -337,7 +275,7 @@ section {
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
       transition-delay: 0s; }
   section.work {
-    background: #fbfaf8; }
+    background: #F6F6F6; }
     section.work h2 {
       font-size: 1.7em;
       font-weight: 400;
@@ -383,5 +321,68 @@ footer {
       display: inline-block; }
       footer ul li a {
         color: #FFF; }
+
+.home .navbar {
+  background: #003559; }
+  .home .navbar .nav li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 18px 10px;
+    font-size: 13px; }
+.home header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/skyline.png") #006bb1 center bottom repeat-x;
+  padding: 240px 0 140px; }
+  .home header:after {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    bottom: 8px;
+    content: '';
+    display: block;
+    height: 0;
+    left: 0;
+    padding-bottom: 13%;
+    position: absolute;
+    right: 0;
+    z-index: 20; }
+  .home header h1 {
+    border-bottom: 1px solid #FFF;
+    width: 150px;
+    padding: 0 0 20px;
+    margin-bottom: 10px;
+    background: none;
+    text-align: left;
+    float: none;
+    font-size: 30px; }
+
+.contact-us header {
+  padding: 0;
+  background: none; }
+  .contact-us header iframe {
+    height: 350px; }
+.contact-us .address-map {
+  width: 100%;
+  height: 250px;
+  display: block; }
+.contact-us .contact-map {
+  padding: 0; }
+.contact-us .contact-form .card {
+  border-top: 5px solid #256aaf;
+  padding: 30px 25px;
+  background: #fafafa;
+  margin-top: -150px; }
+.contact-us .address-container {
+  font-size: 16px; }
+  .contact-us .address-container h1 {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #256aaf; }
+  .contact-us .address-container > div {
+    float: left;
+    width: 33%; }
+  .contact-us .address-container .contact-info {
+    margin-bottom: 25px; }
+  .contact-us .address-container .contact-details {
+    clear: left; }
+  .contact-us .address-container .contact-image {
+    float: right; }
 
 /*# sourceMappingURL=styles.css.map */
