@@ -2,14 +2,11 @@
   header {
     padding: 0;
     background: none;
-    iframe {
-      height: 350px;
-    }
   }
-  
+
   .address-map {
     width: 100%;
-    height: 250px;
+    height: 300px;
     display: block;
   }
 
@@ -33,7 +30,7 @@
     }
     & > div {
       float: left;
-      width: 33%;
+      width: 50%;
     }
     .contact-info {
       margin-bottom: 25px;

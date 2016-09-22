@@ -354,14 +354,66 @@ footer {
     float: none;
     font-size: 30px; }
 
+.clients .client-item {
+  width: 35%;
+  margin: 0 7%;
+  float: left;
+  text-align: center;
+  position: relative; }
+  .clients .client-item a {
+    display: block; }
+    .clients .client-item a:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .2s ease-in-out; }
+  .clients .client-item:nth-child(odd) {
+    margin-top: 120px; }
+  .clients .client-item:hover a:after {
+    opacity: .25; }
+  .clients .client-item.sky a:after {
+    background: #e30013; }
+  .clients .client-item.ibm {
+    clear: left; }
+    .clients .client-item.ibm a:after {
+      background: #1f70c1; }
+  .clients .client-item.alcatel-lucent a:after {
+    background: #4c2f72; }
+  .clients .client-item.jpmorgan a:after {
+    background: #0079c1; }
+  .clients .client-item.wiley a:after {
+    background: #000000; }
+  .clients .client-item .description {
+    background: #252525;
+    display: inline-block;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    z-index: 10; }
+  .clients .client-item img {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.24), 0px 2px 16px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 80px;
+    display: inline-block;
+    position: relative; }
+
 .contact-us header {
   padding: 0;
   background: none; }
-  .contact-us header iframe {
-    height: 350px; }
 .contact-us .address-map {
   width: 100%;
-  height: 250px;
+  height: 300px;
   display: block; }
 .contact-us .contact-map {
   padding: 0; }
@@ -377,7 +429,7 @@ footer {
     border-bottom: 2px solid #256aaf; }
   .contact-us .address-container > div {
     float: left;
-    width: 33%; }
+    width: 50%; }
   .contact-us .address-container .contact-info {
     margin-bottom: 25px; }
   .contact-us .address-container .contact-details {
