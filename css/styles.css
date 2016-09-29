@@ -232,10 +232,10 @@ header {
   margin: 0;
   background: url("../images/bannerimage.jpg") center center;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
   color: #FFF;
-  padding: 45px 0;
+  padding: 60px 0;
   border-bottom: 5px solid #256aaf; }
   header h1 {
     font-size: 30px;
@@ -254,7 +254,7 @@ header {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
 
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   background: #FFF; }
   section.intro h2 {
     font-size: 21px;
@@ -265,21 +265,8 @@ section {
     width: 100%; }
   section.intro .learn-more {
     margin-top: 25px;
-    text-transform: uppercase;
     display: block;
-    padding: 10px 20px;
-    background: #006bb1;
-    font-size: 12px;
-    font-weight: 500;
-    color: #FFF;
-    float: left;
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0.2s;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
-    section.intro .learn-more:hover {
-      text-decoration: none;
-      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-      transition-delay: 0s; }
+    float: left; }
   section.work {
     background: #F6F6F6; }
     section.work h2 {
@@ -328,6 +315,24 @@ footer {
       footer ul li a {
         color: #FFF; }
 
+.btn {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: #006bb1;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FFF;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+  .btn:hover {
+    text-decoration: none;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition-delay: 0s;
+    color: #FFF; }
+  .btn i {
+    margin-left: 5px; }
+
 .home .navbar {
   background: #003559; }
   .home .navbar .nav li a {
@@ -362,59 +367,43 @@ footer {
 
 .services .service-header {
   background: url("../images/patternBg.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding: 40px 0; }
 .services .service-item {
+  text-align: center;
   margin-bottom: 30px; }
   .services .service-item i {
-    float: left;
     background: #256aaf;
     padding: 10px;
     font-size: 20px;
     border-radius: 50%;
-    color: #FFF;
-    margin-right: 10px; }
+    color: #FFF; }
   .services .service-item h3 {
-    margin-top: 10px;
     color: #000;
     font-size: 22px; }
   .services .service-item p {
-    color: #98a4ab;
-    font-size: 16px; }
-
-.clients .client-item {
-  width: 29%;
-  margin: 0 2%;
-  float: left;
+    color: #98a4ab; }
+.services .contact {
+  padding: 40px 0;
+  position: relative;
+  z-index: 10;
+  background-color: #e9e9e9;
+  border-top: 1px solid #ddd;
   text-align: center;
-  position: relative; }
+  vertical-align: bottom;
+  font-size: 20px;
+  color: #4b4f52;
+  font-weight: 700; }
+  .services .contact .btn {
+    margin-left: 20px; }
+
+.clients header {
+  background-image: url(../images/clientBannerImage.jpg); }
+.clients .client-item {
+  text-align: center;
+  margin-bottom: 60px; }
   .clients .client-item a {
     display: block; }
-    .clients .client-item a:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity .2s ease-in-out; }
-  .clients .client-item:nth-child(2) {
-    margin-bottom: 60px; }
-  .clients .client-item:hover a:after {
-    opacity: .25; }
-  .clients .client-item.sky a:after {
-    background: #e30013; }
-  .clients .client-item.ibm a:after {
-    background: #1f70c1; }
-  .clients .client-item.alcatel-lucent a:after {
-    background: #4c2f72; }
-  .clients .client-item.jpmorgan {
-    clear: left;
-    margin-left: 18.5%; }
-    .clients .client-item.jpmorgan a:after {
-      background: #0079c1; }
-  .clients .client-item.wiley a:after {
-    background: #000000; }
   .clients .client-item .description {
     background: #252525;
     display: inline-block;
@@ -465,5 +454,9 @@ footer {
     clear: left; }
   .contact-us .address-container .contact-image {
     float: right; }
+
+@media (max-width: 992px) {
+  .contact-us .contact-form .card {
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

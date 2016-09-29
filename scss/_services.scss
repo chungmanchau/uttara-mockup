@@ -2,26 +2,39 @@
     .service-header {
         background: url("../images/patternBg.jpg") no-repeat;
         background-size: cover;
+        padding: 40px 0;
     }
     .service-item {
+        text-align: center;
         margin-bottom: 30px;
         i {
-            float: left;
             background: #256aaf;
             padding: 10px;
             font-size: 20px;
             border-radius: 50%;
             color: #FFF;
-            margin-right: 10px;
         }
         h3 {
-            margin-top: 10px;
             color: #000;
             font-size: 22px;
         }
         p {
             color: #98a4ab;
-            font-size: 16px;
+        }
+    }
+    .contact {
+        padding: 40px 0;
+        position: relative;
+        z-index: 10;
+        background-color: #e9e9e9;
+        border-top: 1px solid #ddd;
+        text-align: center;
+        vertical-align: bottom;
+        font-size: 20px;
+        color: #4b4f52;
+        font-weight: 700;
+        .btn {
+            margin-left: 20px;
         }
     }
 }
