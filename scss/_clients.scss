@@ -1,7 +1,7 @@
 .clients {
 	.client-item {
-		width: 35%;
-		margin: 0 7%;
+		width: 29%;
+		margin: 0 2%;
 		float: left;
 		text-align: center;
 		position: relative;
@@ -18,8 +18,8 @@
 				transition: opacity .2s ease-in-out;
 			}
 		}
-		&:nth-child(odd) {
-			margin-top: 120px;
+		&:nth-child(2) {
+			margin-bottom: 60px;
 		}
 		&:hover {
 			a {
@@ -36,7 +36,6 @@
 			}
 		}
 		&.ibm {
-			clear: left;
 			a {
 				&:after {
 					background: #1f70c1;
@@ -51,6 +50,8 @@
 			}
 		}
 		&.jpmorgan {
+			clear: left;
+			margin-left: 18.5%;
 			a {
 				&:after {
 					background: #0079c1;
@@ -71,21 +72,22 @@
 			bottom: -14px;
 			left: 50%;
 			transform: translateX(-50%);
-			padding: 5px 15px;
+			padding: 5px 0;
 			color: #FFF;
 			text-transform: uppercase;
 			font-weight: bold;
-			font-size: 17px;
+			font-size: .9em;
 			z-index: 10;
+			width: 66%;
 		}
 		img {
 			box-shadow: 0px 2px 5px rgba(0,0,0,.24), 0px 2px 16px rgba(0,0,0,.1);
 			margin: 0 auto;
 			width: 100%;
-			padding:20px 80px;
+			padding: 20px 80px;
 			display: inline-block;
 			position: relative;
 
 		}
-	}	
+	}
 }

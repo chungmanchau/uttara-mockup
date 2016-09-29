@@ -12,6 +12,12 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   color: rgb(98, 98, 98);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+p {
+    color: #98a4ab;
 }
 
 .navbar-brand {
@@ -48,15 +54,16 @@ body {
 
 
 // Header
-header {  
-  margin: 0;  
-  background:url("../images/bannerimage.jpg") center center;  
+header {
+  margin: 0;
+  background:url("../images/bannerimage.jpg") center center;
+    background-attachment: fixed;
   background-size: 100%;
   position: relative;
   color: #FFF;
-  padding: 45px 0;  
+  padding: 45px 0;
   border-bottom: 5px solid #256aaf;
-  h1 {   
+  h1 {
     font-size: 30px;
     padding: 10px;
     background: rgba(0,0,0,.5);
@@ -64,10 +71,10 @@ header {
     font-weight: 200;
     float: left;
   }
-  h3 {   
+  h3 {
     font-size: 21px;
     font-weight: 200;
-  } 
+  }
 }
 
 // Cards
