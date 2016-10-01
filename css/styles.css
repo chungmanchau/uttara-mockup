@@ -228,6 +228,9 @@ p {
     margin: 18px 10px;
     font-size: 13px; }
 
+.navbar-default .navbar-toggle {
+  margin-top: 26px; }
+
 header {
   margin: 0;
   background: url("../images/bannerimage.jpg") center center;
